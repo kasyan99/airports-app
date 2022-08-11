@@ -5,3 +5,8 @@ export interface IAirport {
    country: string
    city: string
 }
+
+
+export type IType = string
+export type ICountry = string
+export type ICity = string
