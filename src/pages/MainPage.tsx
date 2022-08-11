@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import { AirportCard } from "../components/AirportCard"
-import { AirportFelter } from "../components/AirportFelter"
+import { AirportFilter } from "../components/AirportFilter"
 import { AirportSearch } from "../components/AirportSearch"
 import { useAppDispatch, useAppSelector } from "../hook/redux"
 import { getAirports } from "../store/actions/airport-actions"
@@ -11,22 +11,22 @@ export function MainPage() {
    const dispatch = useAppDispatch()
    const { airports, loading, error, totalItemsCount, itemsPerPage, currentPage } = useAppSelector(state => state.airport)
    const pageCount = Math.ceil(totalItemsCount / itemsPerPage)
-
+   const filter = useAppSelector(state => state.handbook.filter)
    useEffect(() => {
-      dispatch(getAirports(currentPage))
-   }, [dispatch, currentPage])
+      dispatch(getAirports(currentPage, filter))
+   }, [dispatch, currentPage, filter])
 
    const pageChangeHandler = ({ selected }: { selected: number }) => {
       console.log('pageChangeHandler', selected + 1);
       const newPage = selected + 1
       dispatch(airportSlice.actions.setPage(newPage))
-      dispatch(getAirports(newPage))
+      dispatch(getAirports(newPage, filter))
    }
 
    return <div className="container mx-auto max-w-[760px] p-5">
       <AirportSearch />
 
-      <AirportFelter />
+      <AirportFilter />
 
       {loading &&
          <p className="text-center text-lg">Loading...</p>}

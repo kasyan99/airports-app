@@ -1,8 +1,10 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import airportReducer from './slices/airport-slice'
+import handbookSlice from "./slices/handbook-slice";
 
 const rootReducer = combineReducers({
-   airport: airportReducer
+   airport: airportReducer,
+   handbook: handbookSlice
 })
 
 export function setupStore() {
