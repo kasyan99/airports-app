@@ -1,5 +1,5 @@
 import axios from "axios";
-import { IAirport, ICity, ICountry, IType } from "../models/models";
+import { IAirport, ICity, ICountry, IType, IUser } from "../models/models";
 import { IFilter } from "../store/slices/handbook-slice";
 
 const instance = axios.create({
@@ -33,3 +33,8 @@ export const handbookAPI = {
    },
 }
 
+export const authAPI = {
+   checkLogin(login: string) {
+      return instance.get<IUser[]>(`users?login=${login}`)
+   }
+}

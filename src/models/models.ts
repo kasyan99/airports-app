@@ -6,6 +6,11 @@ export interface IAirport {
    city: string
 }
 
+export interface IUser {
+   id: number
+   login: string
+   password: string
+}
 
 export type IType = string
 export type ICountry = string

@@ -35,7 +35,7 @@ export function MainPage() {
          <p className="text-center text-lg text-red-600">{error}</p>}
 
       {!loading && !error &&
-         airports.map(airport => <AirportCard key={`${airport.id}${Date.now}`} airport={airport} />)}
+         airports.map(airport => <AirportCard key={`${airport.id}${Date.now()}`} airport={airport} />)}
 
       <ReactPaginate
          breakLabel="..."

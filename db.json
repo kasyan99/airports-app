@@ -1,0 +1,110 @@
+{
+  "airports": [
+    {
+      "id": "1",
+      "name": "Borispol airport",
+      "type": "Commercial Service Airports Primary",
+      "country": "Ukraine",
+      "city": "Boryspil"
+    },
+    {
+      "id": "2",
+      "name": "Atlanta airport",
+      "type": "Cargo Service Airports",
+      "country": "USA",
+      "city": "Atlanta"
+    },
+    {
+      "id": "3",
+      "name": "Washington airport",
+      "type": "Local Airports",
+      "country": "USA",
+      "city": "Washington"
+    },
+    {
+      "id": "4",
+      "name": "Los Angeles airport",
+      "type": "Local Airports",
+      "country": "USA",
+      "city": "Los Angeles"
+    },
+    {
+      "id": "5",
+      "name": "Las Vegas airport",
+      "type": "Commercial Service Airports Non-Primary",
+      "country": "USA",
+      "city": "Las Vegas"
+    },
+    {
+      "id": "6",
+      "name": "Toronto airport",
+      "type": "Commercial Service Airports Non-Primary",
+      "country": "Canada",
+      "city": "Toronto"
+    },
+    {
+      "id": "7",
+      "name": "Vancouver airport",
+      "type": "Reliever Airports",
+      "country": "Canada",
+      "city": "Vancouver"
+    },
+    {
+      "id": "8",
+      "name": "Frankfurt airport",
+      "type": "Reliever Airports",
+      "country": "Germany",
+      "city": "Frankfurt"
+    },
+    {
+      "id": "9",
+      "name": "Hamburg airport",
+      "type": "Reliever Airports",
+      "country": "Germany",
+      "city": "Hamburg"
+    }
+  ],
+  "types": [
+    "Commercial Service Airports Primary",
+    "Commercial Service Airports Non-Primary",
+    "Cargo Service Airports",
+    "Reliever Airports",
+    "General Aviation Airports",
+    "National Airports",
+    "Regional Airports",
+    "Local Airports",
+    "Basic Airports",
+    "Unclassified Airports"
+  ],
+  "countries": [
+    "USA",
+    "Ukraine",
+    "Germany",
+    "Canada"
+  ],
+  "cities": [
+    "Boryspil",
+    "Atlanta",
+    "Washington",
+    "Los Angeles",
+    "Las Vegas",
+    "Toronto",
+    "Montreal",
+    "Vancouver",
+    "Munich",
+    "Frankfurt",
+    "Hamburg"
+  ],
+  "users": [
+    {
+      "id": 1,
+      "login": "andrii@gmail.com",
+      "password": "1111"
+    },
+    {
+      "id": 2,
+      "login": "sdfsd",
+      "password": "12312"
+    }
+  ]
+}

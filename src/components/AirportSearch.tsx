@@ -35,7 +35,7 @@ export function AirportSearch() {
       {searchedAirs.length > 0 &&
          <ul className="absolute shadow-lg rounded-md bg-white top-34 w-full h-60 overflow-auto">
             {searchedAirs.map((airp: IAirport) => {
-               return <li key={`${airp.id}${Date.now}`}
+               return <li key={`${airp.id}${Date.now()}`}
                   className='px-2 py-1 hover:bg-gray-400 hover:text-white'
                   onClick={() => navigate(`/airport/${airp.id}`)}
                >{airp.name}</li>
